@@ -7,7 +7,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://mern-stack-chat-app-4rum.onrender.com",
+    origin: "*",
+    // origin: "https://mern-stack-chat-app-4rum.onrender.com",
     methods: ["GET", "POST"],
   },
 });
